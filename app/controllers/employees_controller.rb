@@ -1,5 +1,5 @@
 class EmployeesController < ApplicationController
   def index
-    render json: { data: Employee.all }
+    render json: EmployeeDatatable.new(params)
   end
 end
